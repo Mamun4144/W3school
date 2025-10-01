@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h2>What is The name of National Bird In Bangladesh?</h2>
+    <p id="demo">The National Bird of Bangladesh is</p>
+
+  <button type="button" onclick="document.getElementById('demo'). innerHTML = 'Doal'">Answer</button> -->
+
+
+  <!-- Light On Off -->
+
+
+  <!-- <h2> Light On And Off Trick </h2>
+
+  <p> In this Case Js changes the value of the src (source) attribute of an image</p>
+
+
+  <button type="button" onclick="document.getElementById('myImg'). src='/1 class/w3school/image/pic_bulbon.gif'"> Trun On the Light</button>
+  <img id="myImg" src="/1 class/w3school/Image/pic_bulboff.gif"  style="width: 100px;"> 
+
+  <button type="button" onclick="document.getElementById('myImg'). src='/1 class/w3school/Image/pic_bulboff.gif'">Trun Of  The Light</button> -->
+
+
+<!-- <h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+<p id="demo2" style="display: none; ">The Light is On Now</p>
+
+ইমেজ আগে থেকে লুকানো -->
+<!-- <img id="myImage" src="/1 class/w3school/Image/pic_bulboff.gif" width="100" style="display:none;">
+<button type="button" 
+onclick="document.getElementById('demo').style.fontSize='25px';
+        document.getElementById('demo2').style.background = 'green';
+         document.getElementById('demo2').style.display='block'; 
+         document.getElementById('myImage').style.display='';">
+Click
+</button> -->
+
+<!-- <p id="demo">JavaScript can change the style of an HTML element.</p>
+<img id="myImage" src="/1 class/w3school/Image/pic_bulboff.gif" width="100" >
+<img id="myImage2" src="/1 class/w3school/Image/pic_bulbon.gif" width="100" style="display: none;" >
+
+<p id="demo2" style="display: none; ">The Light is On Now</p>
+<p id="demo3">The Light is Off Now</p> <br>
+  <button id="onLight" type="button" onclick="onLight()">Trun On</button>
+  <button id="offLight" type="button" onclick="offLight()">Trun Off</button>
+
+
+
+  <style> -->
+<!-- 
+/* #onLight{
+  background-color: green;
+  font-weight: bold;
+  font-size: 17px;
+  height: 32px;
+  width: auto;
+  
+}
+#onLight:hover {
+
+  background: greenyellow;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+#offLight{
+  background-color: red;
+  font-weight: bold;
+  font-size: 17px;
+  height: 32px;
+  width: auto;
+  
+}
+
+#offLight:hover {
+  background-color: rgb(78, 25, 25);
+  cursor: pointer;
+  transform: scale(1.1);
+} */
+  </style> -->
+   <!-- <script>
+
+    // Light on function
+
+    //  Light Off
+ function offLight(){
+  let demo3 = document.getElementById('demo3');
+      demo3.style.background = 'red';
+      demo3.style.color = 'white';
+      demo3.style.display = 'inline-block';
+      demo3.style.fontWeight = 'bold';
+      // demo3.style.fontSize= '25px';
+
+  
+document.getElementById('myImage').style.display ='block'
+document.getElementById('myImage2').style.display ='none'
+document.getElementById('demo2').style.display = 'none'
+
+ }
+    
+
+
+
+    function onLight(){
+      //font size
+      document.getElementById('demo2').style.fontSize= '25px';
+      document.getElementById('demo3').style.fontSize= '25px';
+
+      // Text Backgrund
+      let demo2 = document.getElementById('demo2');
+      demo2.style.background = 'green';
+      demo2.style.display = 'inline-block';
+      demo2.style.fontWeight = 'bold';
+    
+      document.getElementById('demo3').style.display = 'none'
+      //Image 
+    document.getElementById('myImage2').style.display = 'block';
+    document.getElementById('myImage').style.display = 'none'
+    };
+    
+
+   </script> -->
+
+
+<!-- 
+   <h2> JavaScript const</h2>
+   <p >Declaring a constant object does NOT make the objects properties unchangeable:</p>
+
+   <p id="demo"></p>
+   <p id="demo2"></p>
+   <p id="demo3"></p>
+
+  <script>
+
+    // const use way 1
+    const products = {name:"soap",type:"solid",price:"50 Taka", }
+   //replace properties
+    products.name = "test"
+    //add properties
+    products.packet = "paper"
+
+    //Delete properties
+    delete products.price;
+
+    document.getElementById("demo").innerHTML=products.name;
+
+
+    //const use way 2
+    const person = {};
+    //add properties
+    person.name = "Mamun";
+    person.color = "black";
+    person.hobby = "play game";
+    person.blood_group="O+"; 
+    document.getElementById("demo2").innerHTML = person.name
+    
+    // const use way 3
+
+    const mobile = new Object({ 
+      brand:"Samsung",
+      type:"Android",
+      price:"10000 Taka",
+    })
+    document.getElementById("demo3").innerHTML = mobile.price
+  </script> -->
+
+<!-- 
+  <p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p> -->
+
+<!-- তিনটা আলাদা বোতাম -->
+<!-- <button onclick="showProduct()">Show product</button>
+<button onclick="showPerson()">Show Person</button>
+<button onclick="showMobile()">Show Mobile</button> -->
+
+<!-- <script>
+  // ---------- Object বানানোর ১ম উপায় ----------
+  // এখানে product নামে একটা object বানানো হলো (literal way)
+  const product = {name:"soap", type:"solid", price:"50 Taka"};
+
+  // showProduct() ফাংশন চালালে demo প্যারাগ্রাফে product-এর ডাটা দেখাবে
+  function showProduct() {
+    document.getElementById("demo").innerHTML =
+      "Product Name: " + product.name +
+      " | Product Type: " + product.type +
+      " | Product Price: " + product.price;
+  }
+
+  // ---------- Object বানানোর ২য় উপায় ----------
+  // এখানে খালি object তৈরি করে পরে প্রপার্টি অ্যাড করা হলো
+  const person = {};             // খালি object
+  person.gender = "male";        // প্রপার্টি যোগ করা
+  person.name = "Mamun";
+  person.blood_g = "O+";
+
+  // showPerson() ফাংশন চালালে demo2 প্যারাগ্রাফে person-এর ডাটা দেখাবে
+  function showPerson() {
+    document.getElementById("demo2").innerHTML =
+      "Name: " + person.name +
+      " | Gender: " + person.gender +
+      " | Blood Group: " + person.blood_g;
+  }
+
+  // ---------- Object বানানোর ৩য় উপায় ----------
+  // সরাসরি object literal দিয়ে ডাটা বসানো হলো
+  const mobile = {
+    brand: "MI",
+    type: "Android",
+    price: "2000"
+  };
+
+  // showMobile() ফাংশন চালালে demo3 প্যারাগ্রাফে mobile-এর ডাটা দেখাবে
+  function showMobile() {
+    document.getElementById("demo3").innerHTML =
+      "Mobile Type: " + mobile.type +
+      " | Brand: " + mobile.brand +
+      " | Price: " + mobile.price;
+  }
+</script> -->
+<!-- <p id="d"></p>
+<button type="button"  onclick="demo()">Click here</button>
+<script>
+  function demo(){
+    document.getElementById("d").innerHTML = "Its Working"
+
+  }
+</script> -->
+
+<p id="demo"></p>
+
+
+<button id="bcbtn" type="button" onclick="back()" style="display: none;" >Back</button>
+<button id="shwt" type="button" onclick="star()">Show Text</button>
+<button id="redc" type="button" onclick="red()" style="display: none;">Red</button>
+<button id="greenc" type="button" onclick="green()" style="display: none;">Green</button>
+<button id="boldc" type="button" onclick="bold()" style="display: none;">Bold</button>
+
+<script>
+function star(){
+  document.getElementById("")
+document.getElementById("demo").innerHTML = "My Name Is Khan";
+document.getElementById("bcbtn").style.display = "inline-block";
+document.getElementById("shwt").style.display = "none";
+document.getElementById("redc").style.display = "inline-block";
+document.getElementById("greenc").style.display = "inline-block";
+document.getElementById("boldc").style.display = "inline-block";
+
+}
+function back(){
+document.getElementById("shwt").style.display = "inline-block";
+document.getElementById("demo").innerHTML = "";
+document.getElementById("bcbtn").style.display ="none";
+document.getElementById("greenc").style.display ="none";
+document.getElementById("redc").style.display ="none";
+document.getElementById("boldc").style.display ="none";
+document.getElementById("demo").style.color = "black";
+document.getElementById("redc").style.color = "black";
+
+
+}
+
+function red(){
+  const rd = document.getElementById("redc");
+  const tx = document.getElementById("demo");
+   document.getElementById("greenc").style.color = "black";
+ 
+  
+  if (tx.style.color === "red"){
+    tx.style.color = "black";
+  }
+else {tx.style.color = "red"}
+
+  if(rd.style.color ==="black" || rd.style.color === "") {
+    rd.style.color = "red";
+    
+}
+  else{rd.style.color ="black"} 
+
+
+
+} 
+  
+function green(){
+  const gtx = document.getElementById("demo") ;
+  const grc=  document.getElementById("greenc");
+  document.getElementById("redc").style.color = "black";
+
+ if (gtx.style.color === "green") {
+  gtx.style.color = "black";
+ }
+ else {gtx.style.color = "green"}
+
+ if (grc.style.color === "green") {
+  grc.style.color ="black"
+ }
+ else{
+  grc.style.color = "green"
+ }
+}
+
+function bold(){
+  const bldtx =  document.getElementById("demo");
+  
+  if(bldtx.style.fontWeight === "bold"){
+    bldtx.style.fontWeight ="Normal";
+  } 
+  else { bldtx.style.fontWeight = "bold";
+
+  }
+  
+}
+</script>
+
+
+  </body>
+</html>
