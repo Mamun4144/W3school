@@ -380,10 +380,10 @@ function bold(){
 </script>  -->
 
  <!-- Using the ternary operator -->
-<h1>JavaScript Ternary Operaton</h1>
-<p id="demo"></p>
+<!-- <h1>JavaScript Ternary Operaton</h1>
+<p id="demo"></p> -->
 
-<script> 
+<!-- <script>  
   //  let age = 19 ;
   // text = ( age < 18) ? "Yes" : "No";
   // document.getElementById("demo").innerHTML = "the result is"+" "+  text;
@@ -397,37 +397,166 @@ function bold(){
 // document.getElementById('demo').innerHTML ="total price is "+ totalPrice;
 
 
-let day;
-let date = new Date().getDay();
+// let day;
+// let date = new Date().getDay();
 
-switch (date ){
-case 0:
-  day = "Sunday" 
-  break ;
-  case 1:
-    day = "Monday";
-  break;
-  case 2:
-    day = "Tuesday";
+// switch (date ){
+// case 0:
+//   day = "Sunday" 
+//   break ;
+//   case 1:
+//     day = "Monday";
+//   break;
+//   case 2:
+//     day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wednesday";
+//     break;
+//   case 4:
+//     day = "Thursday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case  6:
+//     day = "Saturday";
+// }
+
+
+// document.getElementById('demo').innerHTML= "Today is " + day; //
+
+  </script> -->
+
+
+<!-- <p id="demo"></p>
+
+<script>
+  let x = 2 ;
+
+  switch (x){
+    case 0:
+      text = "off";
+      break;
+      case 1: 
+      text = "on";  
+      break;
+      default:
+        text = "No value found";
+
+  }
+
+  document.getElementById('demo').innerHTML = text; 
+
+
+</script>-->
+
+<!-- <h1>JavaScript Boolean</h1>
+<h2>Use Case: Equality</h2>
+
+<p id="demo"></p>
+
+<script>
+  let x = 5;
+  document.getElementById('demo').innerHTML =
+    (x == 8); // false
+
+</script> -->
+
+<!-- <h1>JavaScript Boolean</h1>
+<h2>Use Case: While Loop</h2>
+<p id="demo"></p>
+
+<script>
+  let text = "";
+  let i =1;
+  while (i < 10) {
+    text += i;
+    i++;
+  }
+  document.getElementById('demo').innerHTML = text; 
+  console.log(text);
+</script> -->
+
+<!-- <p id="demo"></p>
+
+<script>
+
+let x = 1;
+
+switch (x){
+  case 0:
+    text = "nothing"; 
     break;
-  case 3:
-    day = "Wednesday";
-    break;
-  case 4:
-    day = "Thursday";
-    break;
-  case 5:
-    day = "Friday";
-    break;
-  case  6:
-    day = "Saturday";
+    case 1 :
+      text = "on";
+      break;
+      case 2:
+        text = "off";
+        break;
+        default:
+          text = "no value found";
 }
 
+document.getElementById("demo").innerHTML = text;
 
-document.getElementById('demo').innerHTML= "Today is " + day; //
+//</script> 
 
-</script> 
 
+// JavaScript Logical Operators 
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+  let x = 5;
+  let y = 10;
+//And Operator (&&)
+  // document.getElementById('demo').innerHTML = (x <10  && y > 3) //true 
+  //    + "<br>"+
+  // (x < 10 && y > 12) // false
+  // + "<br>"+ (x < 2 && y > 12) // false
+
+  //And Operator (&&)  সবগুলো শর্ত সঠিক হলে true রিটার্ন করে , একটাও ভুল হলে false রিটার্ন করে    
+  
+  
+
+//OR Operator (||)
+// document.getElementById('demo').innerHTML =
+// (x < 10 || y >12) // true
+// + "<br>" +
+// (x < 2 || y > 12) // false
+//OR Operator (||) একটাও শর্ত সঠিক হলে true রিটার্ন করে , সবগুলো শর্তই ভুল হলে false রিটার্ন করে
+  
+
+//NOT Operator (!)
+document.getElementById('demo').innerHTML
+= !(x < 10 || y >12)// false
++ "<br>"+
+!(x < 2 && y > 12)// true
+//NOT Operator (!) শর্তের ফলাফলকে উল্টে দেয় , শর্ত true হলে false রিটার্ন করে , শর্ত false হলে true রিটার্ন করে
+</script>-->
+
+
+<!--JavaScript Loops -->
+
+<p id="demo"></p>
+
+<script>
+  // const cars = ["BMW", "Volvo", "Saab", "Ford"];
+  // let text = "";
+  // for (let i = 0; i <cars.length; i++){
+  //   text += cars[i] + "<br>";
+  // }
+
+  // document.getElementById('demo').innerHTML = text;
+let x = "";
+
+for (i=0; i<10 ; i++){
+  x +="hello"+"<br>";
+  document.getElementById('demo').innerHTML = x;
+}
+</script>
 
 
 
